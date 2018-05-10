@@ -8,7 +8,7 @@ Inspired by [gakubuchi](https://github.com/yasaichi/gakubuchi).
 
 In app/views/public_pages/404.html.haml:
 
-```
+```haml
 %h1 Not found
 %p This webpage is not found.
 %p= link_to 'Home', root_path
@@ -16,14 +16,23 @@ In app/views/public_pages/404.html.haml:
 
 In app/views/public_pages/500.html.haml:
 
-```
+```haml
 %h1 Server error
 %p This webpage is not working.
 ```
 
+In app/views/public_pages/robots.text.erb:
+
+```erb
+<% unless Rails.env.production? %>
+User-Agent: *
+Disallow: /
+<% end %>
+```
+
 In app/views/layout/public.html.haml:
 
-```
+```haml
 !!!
 %html
   %head
@@ -46,7 +55,7 @@ or
 rake fuchidori:generate
 ```
 
-This will generate `public/404.html` and `public/500.html`.
+This will generate `public/404.html`, `public/500.html`, and `public/robots.txt`.
 
 ## Installation
 
