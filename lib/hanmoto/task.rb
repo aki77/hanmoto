@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Fuchidori
+module Hanmoto
   class Task
     EXTENSIONS = {
       text: 'txt',

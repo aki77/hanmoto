@@ -1,4 +1,4 @@
-# Fuchidori
+# Hanmoto
 
 Public pages management with Asset Pipeline.
 
@@ -52,7 +52,7 @@ rake assets:precompile
 or
 
 ```
-rake fuchidori:generate
+rake hanmoto:generate
 ```
 
 This will generate `public/404.html`, `public/500.html`, and `public/robots.txt`.
@@ -62,7 +62,7 @@ This will generate `public/404.html`, `public/500.html`, and `public/robots.txt`
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'fuchidori'
+gem 'hanmoto'
 ```
 
 And then execute:
@@ -74,7 +74,7 @@ $ bundle
 Or install it yourself as:
 
 ```bash
-$ gem install fuchidori
+$ gem install hanmoto
 ```
 
 ## Contributing
