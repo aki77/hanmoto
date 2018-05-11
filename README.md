@@ -9,6 +9,7 @@ Inspired by [gakubuchi](https://github.com/yasaichi/gakubuchi).
 In app/views/public_pages/404.html.haml:
 
 ```haml
+- provide(:title, 'Not found')
 %h1 Not found
 %p This webpage is not found.
 %p= link_to 'Home', root_path
@@ -17,6 +18,7 @@ In app/views/public_pages/404.html.haml:
 In app/views/public_pages/500.html.haml:
 
 ```haml
+- provide(:title, 'Server error')
 %h1 Server error
 %p This webpage is not working.
 ```
