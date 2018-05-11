@@ -17,7 +17,7 @@ module Hanmoto
 
     def run
       Dir.foreach(Rails.root.join('app', 'views', @view_dir)) do |file|
-        next if file.in?(%w[. ..])
+        next if file.start_with?('.')
         name, format = file.split('.', 3)
         output_path = Rails.root.join('public', [name, format].join('.'))
         layout = @layouts[format.to_sym]

@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'hanmoto/task'
+
 module Hanmoto
   class Railtie < Rails::Engine
     # options

@@ -1,5 +1,3 @@
-require 'hanmoto/task'
-
 namespace :hanmoto do
   desc 'generate public pages'
   task generate: :environment do
