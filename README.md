@@ -54,7 +54,7 @@ rake assets:precompile
 or
 
 ```
-rake hanmoto:generate
+rake hanmoto:publish
 ```
 
 This will generate `public/404.html`, `public/500.html`, and `public/robots.txt`.
