@@ -19,7 +19,7 @@ module Hanmoto
       Dir.foreach(Rails.root.join('app', 'views', @view_dir)) do |file|
         next if file.start_with?('.')
         name, format = file.split('.', 3)
-        output_path = Rails.root.join('public', [name, format].join('.'))
+        output_path = Rails.public_path.join([name, format].join('.'))
         layout = @layouts[format.to_sym]
         body = ApplicationController.renderer.render("#{@view_dir}/#{name}", layout: layout)
         path = output_path(name, format)
@@ -29,7 +29,7 @@ module Hanmoto
     end
 
     def output_path(name, format)
-      Rails.root.join('public', [name, ext_by_format(format)].join('.'))
+      Rails.public_path.join([name, ext_by_format(format)].join('.'))
     end
 
     def ext_by_format(format)

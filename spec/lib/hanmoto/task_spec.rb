@@ -4,11 +4,11 @@ RSpec.describe Hanmoto::Task do
   let(:task) { described_class.new(view_dir: view_dir, layouts: { html: 'public' }) }
 
   after do
-    FileUtils.rm_r(Dir.glob(Rails.public_path.join("*")), secure: true)
+    FileUtils.rm_r(Dir.glob(Rails.public_path.join('*')), secure: true)
   end
 
   describe '#run' do
-    let(:destination_path) { "#{Rails.public_path}/404.html" }
+    let(:destination_path) { Rails.public_path.join('404.html') }
 
     context 'when template does not exist in specified view_dir' do
       let(:view_dir) { 'not_exist_public_pages' }
