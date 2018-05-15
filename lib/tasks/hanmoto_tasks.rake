@@ -6,7 +6,3 @@ namespace :hanmoto do
     Hanmoto::Task.run(Rails.application.config.hanmoto)
   end
 end
-
-Rake::Task['assets:precompile'].enhance do
-  Rake::Task['hanmoto:publish'].invoke
-end
