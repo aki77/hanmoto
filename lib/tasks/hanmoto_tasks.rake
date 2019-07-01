@@ -3,6 +3,6 @@ namespace :hanmoto do
   task publish: :environment do
     # NOTE: clear cache
     ActionView::Base.assets_manifest = Sprockets::Railtie.build_manifest(Rails.application)
-    Hanmoto::Task.run(Rails.application.config.hanmoto)
+    Hanmoto::Task.run(Hanmoto.configuration.to_h)
   end
 end

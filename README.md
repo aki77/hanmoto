@@ -84,12 +84,12 @@ $ gem install hanmoto
 In `config/initializers/hanmoto.rb`, you can configure the following values.
 
 ```ruby
-# Rails.application.configure do
-#   config.hanmoto.view_dir = 'public_page'
-#   config.hanmoto.layouts = {
+Hanmoto.configure do |config|
+#   config.view_dir = 'public_page'
+#   config.layouts = {
 #     html: 'public',
 #   }
-# end
+end
 ```
 
 ## Contributing
