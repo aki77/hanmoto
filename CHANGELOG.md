@@ -1,6 +1,6 @@
 ## 0.4.0
 
-- Cahnged config format
+- Changed config format
 
 ## 0.3.0
 
