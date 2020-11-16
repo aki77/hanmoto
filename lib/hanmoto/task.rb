@@ -6,8 +6,8 @@ module Hanmoto
       text: 'txt',
     }.freeze
 
-    def self.run(*args)
-      new(*args).run
+    def self.run(**args)
+      new(**args).run
     end
 
     def initialize(view_dir:, layouts: {})
