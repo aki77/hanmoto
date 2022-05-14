@@ -1,3 +1,7 @@
+## 0.6.0
+- Drop support for ruby 2.6
+- Drop support for rails 5.1
+
 ## 0.5.0
 - Fix ruby@2.7 keyword warning
 - Drop support for ruby 2.4

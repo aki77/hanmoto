@@ -16,9 +16,9 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.required_ruby_version = '>= 2.5.0'
+  s.required_ruby_version = '>= 2.7.0'
 
-  s.add_dependency "rails", ">= 5.1.0"
+  s.add_dependency "rails", ">= 6.0.5"
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec-rails"
