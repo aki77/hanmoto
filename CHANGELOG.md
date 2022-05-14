@@ -1,4 +1,5 @@
 ## 0.6.0
+- Remove dependency on Sprockets
 - Drop support for ruby 2.6
 - Drop support for rails 5.1
 
