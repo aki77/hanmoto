@@ -92,6 +92,13 @@ Hanmoto.configure do |config|
 end
 ```
 
+If you set ENV['DISABLE_HANMOTO_ON_PRECOMPILE'] ,you can disable auto execution of hanmoto:publish on assets:precompile.
+
+```bash
+export DISABLE_HANMOTO_ON_PRECOMPILE=1
+# then disable auto execution of hanmoto:publish on assets:precompile task.
+```
+
 ## Contributing
 
 Contribution directions go here.
